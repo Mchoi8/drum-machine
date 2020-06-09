@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Drum & Bass Machine</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.3/Tone.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+ 
+  </head>
+  <body>
+      <div id='header'>
+        <h3>D&B Machine</h3>
+      </div>
+
+      <div id='buttons'>  <!-- Buttons that change the drum and bass sounds  -->
+        <button class='btn' type="button"  onclick="defaultSounds()">Default Sounds</button>
+        <button class='btn' type="button"  onclick="sound1()">Web Audio Sounds</button>
+        <button class='btn' type="button"  onclick="sound2()">Tonejs Sounds</button>
+      </div>
+ 
+      <div id='content'> <!-- D adn B icons that change in animation when keys are pressed -->
+        <h3>Drums</h3>
+        <img id='img1' src='images/hi-hat.png'>
+        <img id='img2' src='images/snare-drum.png' />
+        <img id='img3'  src='images/bass-drum.png'>
+
+      </div>
+
+      <div id='content'>
+        <h3>Bass</h3>
+        <img id='img4' src='images/bass.png'>
+        <img id='img5' src='images/bass2.png'>
+        <img id='img6' src='images/bass3.png'>
+
+      </div>
+
+
+       <div id='manual'>  <!--The manual section where users should read up on a quick guide to see how the web page works  -->
+        <h4 id='header'>User's Manual</h4>
+        <p>
+          1) Users are able to choose from three different drum sounds: the hi-hat, drum snare, and bass kick. 
+          By pressing the 'q', 'w', and 'e' keys the drum sounds will trigger and play the audio. Users can then play
+          their own drum beats using the keys.
+          <br>
+          <br>
+          2) The keys for the bass start from 'i', 'o', 'p' which also follows the format for the default and different designated buttons. 
+          This allows the user to play the drum and the bass sounds with their left and right hand.  
+          <br>
+          <br>
+          3) To start, click on the "Default Sounds" button to hear the basic drum and bass sounds. Users have the choice to listen
+          to three different types of sounds playing (hihat, snare, kick) by simpling clicking on the Sounds button and
+          pressing the same keys. 
+        </p>
+
+      </div>
+
+
+
+      <script src="app.js"></script>
+</body>
+
+
+
+</html>
